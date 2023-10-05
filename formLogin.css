@@ -1,0 +1,428 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Kantumruy";
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: "Kantumruy";
+    font-style: normal;
+    font-weight: normal;
+    font-display: swap;
+    src: url("https://natt.realteethclinic.com/assets/font/Kantumruy-Regular.ttf") format('woff2');
+    unicode-range: U+1780-17FF, U+200C, U+25CC;
+}
+
+.wave {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 7rem;
+    padding: 0 2rem;
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.login-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.img img {
+    width: 500px;
+}
+
+form {
+    width: 360px;
+}
+
+.login-content img {
+    height: 90px;
+}
+
+.login-content h2 {
+    margin: 20px 0;
+    margin-top: -5px;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.login-content .input-div {
+    position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0px;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one {
+    margin-top: 0px;
+}
+
+.i {
+    color: #198754;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i i {
+    transition: .3s;
+}
+
+.input-div .div {
+    position: relative;
+    height: 45px;
+}
+
+.input-div .div h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #198754;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.input-div:before,
+.input-div:after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    width: 0%;
+    height: 2px;
+    background-color: #198754;
+    transition: .4s;
+}
+
+.input-div:before {
+    right: 50%;
+}
+
+.input-div:after {
+    left: 50%;
+}
+
+.input-div.focus:before,
+.input-div.focus:after {
+    width: 50%;
+}
+
+.input-div.focus .div h5 {
+    top: -5px;
+    font-size: 12px;
+}
+
+.input-div.focus .i i {
+    color: #198754;
+}
+
+.input-div .div input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #000;
+    font-family: 'poppins', sans-serif;
+}
+
+.input-div .pass {
+    margin-bottom: 4px;
+}
+
+.remumber{
+    width: 100%;
+    height: 20px;
+    /* background-color: #32be8f; */
+    display: inline-block;
+}
+
+.rem-left{
+    float: left;
+    text-align: left;
+    text-decoration: none;
+    color: #198754;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+.rem-right{
+    float: right;
+    text-align: right;
+    text-decoration: none;
+    color: #198754;
+    font-size: 0.9rem;
+    transition: .3s;
+}
+
+.remumber a:hover {
+    opacity: 0.8;
+    /* color: #38d39f; */
+}
+
+.btn button{
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to right, #198754, #198754, #198754);
+    background-size: 200%;
+    font-size: 13px;
+    font-family: "Kantumruy";
+    text-transform: uppercase;
+    margin: 1rem 0;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.btn a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn button:hover {
+    opacity: 0.9;
+}
+.footer-logo{
+    width: 200px;
+    height: 50px;
+    /* background-color: #000; */
+    margin: auto;
+    display: inline-block;
+}
+.footer-logo img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+.footer-logo img:hover{
+    transform: scale(102%);
+    opacity: 0.8;
+}
+
+/* forgetPassword */
+.login-content p{
+    margin-top: -15px;
+    font-size: 14px;
+    color: #000;
+}
+.ii {
+    color: #198754;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.ii i {
+    transition: .3s;
+}
+.input-div .div1 {
+    position: relative;
+    height: 45px;
+    margin-top: 10px;
+}
+
+.input-div .div1 h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #198754;
+    font-size: 12px;
+    transition: .3s;
+}
+.input-div .div1 input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+.input-div.focus .div1 h5 {
+    top: -5px;
+    font-size: 12px;
+}
+.back{
+    margin-top: 40px;
+    text-align: right;
+}
+.back a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #198754;
+}
+.back a:hover{
+    opacity: 0.8;
+}
+
+/* Send OTP */
+
+.i1 {
+    color: #198754;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.i1 i {
+    transition: .3s;
+}
+
+.input-div .div2 {
+    position: relative;
+    height: 45px;
+}
+
+.input-div .div2 h5 {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #198754;
+    font-size: 12px;
+    transition: .3s;
+}
+
+.input-div .div2 input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.7rem;
+    font-size: 1.2rem;
+    color: #000;
+}
+
+.input-div.focus .div2 h5 {
+    top: -5px;
+    font-size: 12px;
+}
+
+.back {
+    margin-top: 40px;
+    text-align: right;
+}
+
+.back a {
+    font-size: 14px;
+    text-decoration: none;
+    color: #198754;
+}
+
+.back a:hover {
+    opacity: 0.8;
+}
+
+
+/* responsive screen */
+@media screen and (max-width: 1050px) {
+    .container {
+        grid-gap: 5rem;
+    }
+    .back a{
+        color: #198754;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    form {
+        width: 300px;
+        margin-left: 30px;
+    }
+
+    .login-content h2 {
+        font-size: .9rem;
+        margin: 8px 0;
+    }
+
+    .img img {
+        width: 400px;
+    }
+    /* forgetPassword */
+    .login-content p{
+        margin-top: 10px;
+    }
+    .login-content .back p{
+        color: #198754;
+        margin-top: -20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .container {
+        margin-top: -20px;
+        grid-template-columns: .9fr;
+    }
+    .login-content h2{
+        margin-top: -5px;
+    }
+    .input-div .div h5{
+        font-size: 12px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    .login-content {
+        justify-content: center;
+    }
+    .btn button{
+        font-size: .8rem;
+    }
+    /* forgetPassword */
+    .login-content p{
+        margin-top: 10px;
+    }
+    .login-content .back p{
+        color: #198754;
+        margin-top: -20px;
+    }
+}
