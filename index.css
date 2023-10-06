@@ -6,7 +6,7 @@
 body{
     font-family: 'kantumruy';
     overflow-x: hidden;
-    background: white;
+    background: whitesmoke;
 }
 
 @font-face {
@@ -47,10 +47,12 @@ body{
 
 .header_left p {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: normal;
     color: white;
-    margin-top: 9px;
+    margin-top: 20px;
+    padding: 4px 0px;
     cursor: pointer;
+    font-family: 'Exo', sans-serif;
 }
 
 .header .header_right {
@@ -69,10 +71,11 @@ body{
 }
 
 .name p{
-    margin-top: 10px;
     text-align: center;
     color: white;
+    font-size: 15px;
     font-weight: 500;
+    
 }
 
 .header_right .user {
@@ -81,7 +84,7 @@ body{
     /* background-color: grey; */
     position: absolute;
     bottom: 15px;
-    right: 0%;
+    right: 4%;
     display: flex;
 }
 
@@ -138,6 +141,7 @@ body{
 .user .user_right {
     width: 50%;
     height: 100%;
+    cursor: pointer;
     /* background-color: gold; */
 }
 
@@ -151,7 +155,6 @@ body{
 
 .user_right i:hover {
     opacity: 0.8;
-    ;
 }
 
 .head {
@@ -189,6 +192,9 @@ body{
 .head_left p {
     margin-top: 10px;
     text-align: center;
+    color: #000;
+    font-weight: normal;
+    font-family: 'Exo', sans-serif;
 }
 /* ==================================== */
 .head .head_left1 {
@@ -196,14 +202,14 @@ body{
     height: auto;
     margin-left: 20px;
     background-color: #FDFDFD;
-        box-shadow: 1px 1px 1px 1px #FDFDFD;
-        border: 1px solid wheat;
+    box-shadow: 1px 1px 1px 1px #FDFDFD;
+    border: 1px solid wheat;
     cursor: pointer;
     border-radius: 5px;
 }
 
 .head_left1:hover {
-    opacity: 0.8;
+    opacity: 0.9;
     border: 1px solid #FDFD;
 }
 
@@ -216,6 +222,9 @@ body{
 .head_left1 p {
     margin-top: 10px;
     text-align: center;
+    color: #000;
+    font-weight: normal;
+    font-family: 'Exo', sans-serif;
 }
 
 
@@ -226,8 +235,8 @@ body{
     height: 100%;
     margin-left: 20px;
     background-color: #FDFDFD;
-        box-shadow: 1px 1px 1px 1px #FDFDFD;
-        border: 1px solid wheat;
+    box-shadow: 1px 1px 1px 1px #FDFDFD;
+    border: 1px solid wheat;
     cursor: pointer;
     border-radius: 5px;
 }
@@ -246,6 +255,9 @@ body{
 .head_right p {
     margin-top: 10px;
     text-align: center;
+    color: #000;
+    font-weight: normal;
+    font-family: 'Exo', sans-serif;
 }
 
 /* Media screen responsive */
@@ -307,6 +319,77 @@ body{
     }
 }
 
+@media only screen and (min-width: 400px) {
+    .header {
+        width: 100%;
+    }
+
+    .header_left p {
+        margin-top: 11px;
+        font-size: 13px;
+    }
+
+    .header_left img {
+        padding: 0px 6px;
+        margin-left: -10px;
+    }
+
+    .header_right .user {
+        margin-right: -30px;
+    }
+
+    .user_left i {
+        font-size: 25px;
+    }
+
+    .header_right .user .user_right img {
+        font-size: 20px;
+        margin-top: 27px;
+    }
+
+    .head {
+        width: 100%;
+        margin-top: 10px;
+        display: block;
+    }
+
+    .head .head_left {
+        width: 44%;
+        height: 220px;
+        margin: auto;
+        margin: 0 0 0 -35px;
+        display: inline-block;
+        padding: 10px 20px;
+    }
+    .head .head_left p{
+        font-size: 15px;
+    }
+    .head .head_left1 p{
+        font-size: 15px;
+    }
+    .head .head_right p{
+        font-size: 15px;
+    }
+
+    .head .head_left1 {
+        width: 44%;
+        height: 220px;
+        margin: auto;
+        display: inline-block;
+        margin: 0 0 0 -35px;
+        padding: 10px 20px;
+    }
+
+    .head .head_right {
+        width: 44%;
+        height: 220px;
+        margin: auto;
+        margin-top: 20px;
+        margin-left: 10px;
+        padding: 10px 20px;
+    }
+}
+
 @media only screen and (min-width: 600px) {
     .header {
         width: 100%;
@@ -328,7 +411,7 @@ body{
         font-size: 24px;
     }
     .header_right .user .user_right i{
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .head {

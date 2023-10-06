@@ -32,7 +32,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 7rem;
-    padding: 0 2rem;
+    /* padding: 0 2rem; */
 }
 
 .img {
@@ -394,6 +394,46 @@ form {
 @media screen and (max-width: 900px) {
     .container {
         margin-top: -20px;
+        grid-template-columns: .9fr;
+    }
+    .login-content h2{
+        margin-top: -5px;
+    }
+    .input-div .div h5{
+        font-size: 12px;
+    }
+
+    .img {
+        display: none;
+    }
+
+    .wave {
+        display: none;
+    }
+
+    .login-content {
+        justify-content: center;
+    }
+    .btn button{
+        font-size: .8rem;
+    }
+    /* forgetPassword */
+    .login-content p{
+        margin-top: 10px;
+    }
+    .login-content .back p{
+        color: #198754;
+        margin-top: -20px;
+    }
+}
+@media screen and (max-width: 800px){
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -20px;
+        margin-left: -20px;
+        /* margin-right: 50px; */
         grid-template-columns: .9fr;
     }
     .login-content h2{
