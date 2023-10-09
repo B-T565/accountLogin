@@ -3,6 +3,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root{
+    --borderColor: #d9d9d9;
+    --colorWrite: #fff;
+    --colorRed: #198754;
+    --colorBlack: #333;
+    --colorBlack1: #000;
+}
 
 body {
     font-family: "Kantumruy";
@@ -64,7 +71,7 @@ form {
 .login-content h2 {
     margin: 20px 0;
     margin-top: -5px;
-    color: #333;
+    color: var(--colorBlack1);
     text-transform: uppercase;
     font-size: 1.3rem;
 }
@@ -75,7 +82,7 @@ form {
     grid-template-columns: 7% 93%;
     margin: 25px 0;
     padding: 5px 0px;
-    border-bottom: 2px solid #d9d9d9;
+    border-bottom: 2px solid var(--borderColor);
 }
 
 .login-content .input-div.one {
@@ -83,7 +90,7 @@ form {
 }
 
 .i {
-    color: #198754;
+    color: var(--colorRed);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +110,7 @@ form {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #198754;
+    color: var(--colorRed);
     font-size: 12px;
     transition: .3s;
 }
@@ -115,7 +122,7 @@ form {
     bottom: -2px;
     width: 0%;
     height: 2px;
-    background-color: #198754;
+    background-color: var(--colorRed);
     transition: .4s;
 }
 
@@ -138,7 +145,7 @@ form {
 }
 
 .input-div.focus .i i {
-    color: #198754;
+    color: var(--colorRed);
 }
 
 .input-div .div input {
@@ -152,7 +159,7 @@ form {
     background: none;
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
-    color: #000;
+    color: var(--colorBlack);
     font-family: 'poppins', sans-serif;
 }
 
@@ -163,7 +170,6 @@ form {
 .remumber{
     width: 100%;
     height: 20px;
-    /* background-color: #32be8f; */
     display: inline-block;
 }
 
@@ -171,7 +177,7 @@ form {
     float: left;
     text-align: left;
     text-decoration: none;
-    color: #198754;
+    color: var(--colorRed);
     font-size: 0.9rem;
     transition: .3s;
 }
@@ -179,14 +185,13 @@ form {
     float: right;
     text-align: right;
     text-decoration: none;
-    color: #198754;
+    color: var(--colorRed);
     font-size: 0.9rem;
     transition: .3s;
 }
 
 .remumber a:hover {
     opacity: 0.8;
-    /* color: #38d39f; */
 }
 
 .btn button{
@@ -196,7 +201,7 @@ form {
     border-radius: 25px;
     outline: none;
     border: none;
-    background-image: linear-gradient(to right, #198754, #198754, #198754);
+    background-image: linear-gradient(to right, var(--colorRed), var(--colorRed), var(--colorRed));
     background-size: 200%;
     font-size: 13px;
     font-family: "Kantumruy";
@@ -208,7 +213,7 @@ form {
 
 .btn a{
     text-decoration: none;
-    color: #fff;
+    color: var(--colorWrite);
 }
 
 .btn button:hover {
@@ -217,8 +222,8 @@ form {
 .footer-logo{
     width: 200px;
     height: 50px;
-    /* background-color: #000; */
     margin: auto;
+    margin-top: 50px;
     display: inline-block;
 }
 .footer-logo img{
@@ -236,10 +241,10 @@ form {
 .login-content p{
     margin-top: -15px;
     font-size: 14px;
-    color: #000;
+    color: var(--colorBlack1);
 }
 .ii {
-    color: #198754;
+    color: var(--colorRed);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -260,7 +265,7 @@ form {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #198754;
+    color: var(--colorRed);
     font-size: 12px;
     transition: .3s;
 }
@@ -275,7 +280,7 @@ form {
     background: none;
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
-    color: #000;
+    color: var(--colorBlack1);
 }
 .input-div.focus .div1 h5 {
     top: -5px;
@@ -288,7 +293,7 @@ form {
 .back a{
     font-size: 14px;
     text-decoration: none;
-    color: #198754;
+    color: var(--colorBlack1);
 }
 .back a:hover{
     opacity: 0.8;
@@ -297,7 +302,7 @@ form {
 /* Send OTP */
 
 .i1 {
-    color: #198754;
+    color: var(--colorRed);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,7 +322,7 @@ form {
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #198754;
+    color: var(--colorRed);
     font-size: 12px;
     transition: .3s;
 }
@@ -333,7 +338,7 @@ form {
     background: none;
     padding: 0.5rem 0.7rem;
     font-size: 1.2rem;
-    color: #000;
+    color: var(--colorBlack1);
 }
 
 .input-div.focus .div2 h5 {
@@ -349,7 +354,7 @@ form {
 .back a {
     font-size: 14px;
     text-decoration: none;
-    color: #198754;
+    color: var(--colorBlack1);
 }
 
 .back a:hover {
@@ -363,7 +368,7 @@ form {
         grid-gap: 5rem;
     }
     .back a{
-        color: #198754;
+        color: var(--colorBlack1);
     }
 }
 
@@ -386,7 +391,7 @@ form {
         margin-top: 10px;
     }
     .login-content .back p{
-        color: #198754;
+        color: var(--colorBlack1);
         margin-top: -20px;
     }
 }
@@ -422,7 +427,7 @@ form {
         margin-top: 10px;
     }
     .login-content .back p{
-        color: #198754;
+        color: var(--colorBlack1);
         margin-top: -20px;
     }
 }
@@ -462,7 +467,7 @@ form {
         margin-top: 10px;
     }
     .login-content .back p{
-        color: #198754;
+        color: var(--colorBlack1);
         margin-top: -20px;
     }
 }
