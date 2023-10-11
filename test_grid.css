@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 body {
-    touch-action: none;
+    touch-action: pan-y;
     background-color: var(--background);
 }
 :root {
