@@ -3,107 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Demo</title>
-    <link rel="stylesheet" media="screen" href="index.css">
-    <link rel="icon" type="icon" href="Image/logo.png">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="Image/logo.png">
     <link href="https://fonts.cdnfonts.com/css/kantumruy" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Angkor&family=Castoro&family=Exo&family=Exo+2&family=Hanuman&family=Kantumruy+Pro:ital@1&family=Noto+Serif+Khmer&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
     <div class="header">
-        <a href="#"><img src="Image/logo.png" alt="image"></a>
-        <div class="txt">
-            <a href="#">CORE SECURITY</a>
+        <div class="header-left">
+            <img src="Image/logo.png" width="60px" height="60px" alt="">
+            <p>CORE SECURITY</p>
         </div>
         <div class="header-right">
-            <div class="name">
-                <p>ហេង​ ធូលីហ្សា-HENG THOULYZA</p>
-            </div>
-            <div class="icon">
-                <div class="icon-full">
-                    <div class="icon-left">
-                        <i class="bi bi-person" onclick="myFunction()"></i>
-                    </div>
-
-                    <div class="icon-right">
-                        <a href="#"><img src="Image/cm.png" alt=""></a>
-                    </div>
-                </div>
-            </div>
+            <p>ហេង​ ធូលីហ្សា-HENG THOULYZA</p>
         </div>
-    </div>
-    <div class="menu-icon" id="myDIV">
-        <ul>
-            <li><a href="new_acc.html"><i class="bi bi-person-circle"></i> គណនីថ្មី</a></li>
-            <li><a href="formLogin.html"><i class="bi bi-box-arrow-left"></i> ចាក់ចេញ</a></li>
-        </ul>
-    </div>
-    
-    <!--  -->
-    <div class="content-box">
-        <div class="content">
-            <div class="content-left">
-                <a href="test_grid.html"><img src="Image/user.png" alt=""></a>
-                <div class="box-txt">
-                    <p>STAFF_APP</p>
-                </div>
-            </div>
-
-            <div class="content-left1">
-                <img src="Image/user1.png" alt="">
-                <div class="box-txt">
-                    <p>STAFF_ALL (Local)</p>
-                </div>
-            </div>
-
-            <div class="content-right">
-                <img src="Image/1.png" alt="">
-                <div class="box-txt">
-                    <p>SELL</p>
-                </div>
-            </div>
-
-            <div class="content-right1">
-                <img src="Image/it-helpdesk.svg" alt="">
-                <div class="box-txt">
-                    <p>IT SUPPORT</p>
-                </div>
-            </div>
+        <div class="menu">
+            <i class="bi bi-person" onclick="myFunction()"></i>
+            <a href="#"><img class="img" src="Image/cm.png" width="25px" height="23px" alt=""></a>
+            <nav id="myDIV">
+                <ul>
+                    <li><a href="new_acc.html"><i class="bi bi-person-circle icon"></i> គណនីថ្មី</a></li>
+                    <li><a href="formLogin.html"><i class="bi bi-box-arrow-left icon"></i> ចាក់ចេញ</a></li>
+                </ul>
+            </nav>
         </div>
     </div>
 
-    <div class="content-box1">
-        <div class="content">
-            <div class="content-left">
-                <img src="Image/1.jpg" alt="">
-                <div class="box-txt">
-                    <p>NETWORK</p>
-                </div>
-            </div>
-    
-            <div class="content-left1">
-                <img src="Image/6892175.png" alt="">
-                <div class="box-txt">
-                    <p>CUSTOMERS</p>
-                </div>
-            </div>
-    
-            <div class="content-right">
-                <img src="Image/staff.png" alt="">
-                <div class="box-txt">
-                    <p>STAFF_BOY</p>
-                </div>
-            </div>
-    
-            <div class="content-right1">
-                <img src="Image/staff1.png" alt="">
-                <div class="box-txt">
-                    <p>STAFF_GIRL</p>
-                </div>
-            </div>
+    <div class="grid-container">
+        <div class="item">
+            <a href="test_grid.html"><img src="Image/user.png" width="80px" height="80px" alt=""></a>
+            <p>STAFF_APP</p>
+        </div>
+        <div class="item">
+            <img src="Image/user1.png" width="80px" height="80px" alt="">
+            <p>STAFF_ALL (Local)</p>
+        </div>
+        <div class="item">
+            <img src="Image/1.png" width="80px" height="80px" alt="">
+            <p>SELL</p>
+        </div>
+        <div class="item">
+            <img src="Image/it-helpdesk.svg" width="80px" height="80px" alt="">
+            <p>IT SUPPORT</p>
+        </div>
+<!-- ======================== -->
+        <div class="item">
+            <img src="Image/network.png" width="80px" height="80px" alt="">
+            <p>NETWORK</p>
+        </div>
+        <div class="item">
+            <img src="Image/6892175.png" width="80px" height="80px" alt="">
+            <p>CUSTOMERS</p>
+        </div>
+        <div class="item">
+            <img src="Image/staff.png" width="80px" height="80px" alt="">
+            <p>STAFF_BOY</p>
+        </div>
+        <div class="item">
+            <img src="Image/staff1.png" width="80px" height="80px" alt="">
+            <p>STAFF_GIRL</p>
         </div>
     </div>
+    
 </body>
 </html>
 <script>
