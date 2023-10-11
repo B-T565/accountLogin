@@ -4,6 +4,7 @@
     box-sizing: border-box;
 }
 body {
+    touch-action: none;
     background-color: var(--background);
 }
 :root {
